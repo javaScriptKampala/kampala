@@ -111,8 +111,24 @@ const Header = ({
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
+                      
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
+                      <Link to="#0" onClick={closeMenu}>About</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>Projects</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>Forum</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>Contact</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>Forum</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>Login</Link>
                     </li>
                   </ul>
                   {!hideSignin &&
@@ -120,7 +136,7 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
+                        <Link to="https://flutterwave/pay/javascript-kampala" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Donate</Link>
                       </li>
                     </ul>}
                 </div>

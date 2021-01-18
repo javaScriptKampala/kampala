@@ -44,8 +44,8 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: 'Build up the whole picture',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: 'Find the right community for your career growth',
+    paragraph: 'Our community targets the youth and boosts of over 500 junior and expert software developers. We are delighted to support knowledge sharing and transfer from industry experts as a way of building the next generation.'
   };
 
   return (
@@ -71,11 +71,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
+                    Learn Together
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                  Explore the importance of learning from peers and industry experts. All they do is use their experience to guide you to make a better version of yourself.                    </p>
                 </div>
               </div>
             </div>
@@ -93,55 +92,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
+                    Grow Together
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-03.svg')}
-                      alt="Features tile icon 03"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-04.svg')}
-                      alt="Features tile icon 04"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                  Expand your knowledge and skills based on variety of experiences by individuals across regions.  Find people with similar goals and achieve them together.                    </p>
                 </div>
               </div>
             </div>
@@ -159,11 +113,52 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
+                    Share Ideas
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                  Share ideas with a wider audience to spark changes in yourself and your community. We provide a platform that brings closer developers and their challenges.                    </p>
+                </div>
+              </div>
+            </div> 
+
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require('./../../assets/images/feature-tile-icon-03.svg')}
+                      alt="Features tile icon 03"
+                      width={64}
+                      height={64} />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">
+                    Build Together
+                    </h4>
+                  <p className="m-0 text-sm">
+                  From our community it’s easier to find likely minded people whom you can easily partner with to learn build your products supported by industry experts.                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require('./../../assets/images/feature-tile-icon-04.svg')}
+                      alt="Features tile icon 04"
+                      width={64}
+                      height={64} />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">
+                  Drive Innovations
+                    </h4>
+                  <p className="m-0 text-sm">
+                  We focus on improving the welfare of the youth by creating employment through innovation of products and services that solve real world challenges in society                    </p>
                 </div>
               </div>
             </div>
@@ -181,11 +176,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
+                    Get support
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                  Our community boosts of industry experts that volunteer to transfer knowledge and skills to newbies and junior software developers by mentorship and guidance                    </p>
                 </div>
               </div>
             </div>
