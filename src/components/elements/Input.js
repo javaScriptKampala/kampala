@@ -54,8 +54,22 @@ const Input = ({
   placeholder,
   rows,
   hint,
+  onEnterKeyUp,
+  onKeyUp,
   ...props
 }) => {
+
+  const onAnyKeyUp=(e)=>{
+    if(e.key==='Enter'){
+      onEnterKeyUp(e)
+      return
+    }
+    try {
+      onKeyUp(e)
+    } catch (error) {
+      
+    }
+  }
 
   const wrapperClasses = classNames(
     (formGroup && formGroup !== '') && (formGroup === 'desktop' ? 'form-group-desktop' : 'form-group'),
@@ -85,6 +99,7 @@ const Input = ({
           value={value}
           placeholder={placeholder}
           rows={type === 'textarea' ? rows : null}
+          onKeyUp={(e)=>onAnyKeyUp(e)}
         />
         {children}
       </div>

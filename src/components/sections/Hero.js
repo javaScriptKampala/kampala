@@ -69,8 +69,8 @@ const Hero = ({
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="https://jskampala.web.app/">
-                    Get started
+                  <Button tag="a" color="primary" wideMobile href="#whatsapp">
+                    JOIN US
                     </Button>
                   <Button tag="a" color="dark" wideMobile href="https://github.com/javaScriptKampala">
                     View on Github
