@@ -13,7 +13,7 @@ const Home = () => {
       <Hero className="illustration-section-01" />
       <FeaturesTiles />
       <Testimonial topDivider />
-      <Cta split />
+      {/* <Cta split /> */}
     </>
   );
 }
