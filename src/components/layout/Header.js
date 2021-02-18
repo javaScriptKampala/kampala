@@ -121,7 +121,7 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="https://flutterwave/pay/javascript-kampala" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Donate</Link>
+                        <a href="https://flutterwave/pay/javascript-kampala" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Donate</a>
                       </li>
                     </ul>}
                 </div>
