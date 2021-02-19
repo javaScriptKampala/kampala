@@ -96,14 +96,14 @@ const Testimonial = ({
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0">
-                  — Being part of the JavaScript community in Kampala helped shape my career when I met someone who offered me guidance selflessly. This guy was already doing what I was desiring to do, he took me through all the pros and cons.
-                      </p>
+                  —  Being part of this platform has been really important. People support me with love and they always make sure my challenges have been resolved. I have never had hat experience anywhere.
+                  </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Ben Stafford</span>
+                  <span className="testimonial-item-name text-color-high">Isakiye Afasha</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">Software Developer</a>
+                    <a href="#0">PHP Developer</a>
                   </span>
                 </div>
               </div>
