@@ -79,7 +79,7 @@ const Testimonial = ({
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0">
-                    — Being part of the JavaScript community in Kampala helped shape my career when I met someone who offered me guidance selflessly. This guy was already doing what I was desiring to do, he took me through all the pros and cons.
+                  — Cool place with cool developers.
                       </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
