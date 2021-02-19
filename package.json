@@ -1,6 +1,7 @@
 {
   "name": "open-react-template",
   "version": "0.1.0",
+  "homepage": "https://javascriptkampala.github.io/kampala",
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
@@ -17,6 +18,8 @@
     "url": "https://github.com/cruip/open-react-template.git"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
