@@ -1,7 +1,6 @@
 {
   "name": "javascript-kampala-site",
   "version": "0.1.0",
-  "homepage": "https://javascriptkampala.github.io/kampala",
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
