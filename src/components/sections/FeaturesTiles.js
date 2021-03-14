@@ -44,8 +44,8 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: 'Find the right community for your career growth',
-    paragraph: 'Our community targets the youth and boosts of over 500 junior and expert software developers. We are delighted to support knowledge sharing and transfer from industry experts as a way of building the next generation.'
+    title: '',
+    paragraph: ''
   };
 
   return (
