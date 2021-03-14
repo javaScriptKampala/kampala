@@ -9,12 +9,13 @@ import Testimonial from '../components/sections/Testimonial';
 const Home = () => {
 
   return (
-    <>
-      <Hero className="illustration-section-01" />
+    <div>
+      {/* <Hero className="illustration-section-01" />
       <FeaturesTiles />
-      <Testimonial topDivider />
+      <Testimonial topDivider /> */}
       {/* <Cta split /> */}
-    </>
+      Hello World
+    </div>
   );
 }
 
