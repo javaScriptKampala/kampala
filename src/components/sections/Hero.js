@@ -27,10 +27,10 @@ const Hero = ({
 
   const [videoModalActive, setVideomodalactive] = useState(false);
 
-  const openModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(true);
-  }
+  // const openModal = (e) => {
+  //   e.preventDefault();
+  //   setVideomodalactive(true);
+  // }
 
   const closeModal = (e) => {
     e.preventDefault();
