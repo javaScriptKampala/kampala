@@ -1,0 +1,18 @@
+{
+    "plugins": [
+        "react", "react-hooks"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+       "react/no-set-state": "off",
+       "react/prop-types": "off",
+       "react/no-children-prop":"off",
+       "react/no-unescaped-entities": "off",
+       "react/display-name": "off",
+       "no-unused-vars": "off",
+       "no-empty":"off"
+    }
+}
