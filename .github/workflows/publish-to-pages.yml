@@ -34,7 +34,7 @@ jobs:
         run: yarn install
       
       - name: Building App
-        run: yarn build 
+        run: yarn build && echo ${{ env.REACT_APP_INSTAGRAM_ACCESS_TOKEN }}
         env:
           REACT_APP_INSTAGRAM_ACCESS_TOKEN: ${{ secrets.REACT_APP_INSTAGRAM_ACCESS_TOKEN }}
           REACT_APP_SMTP_SECURE_TOKEN: ${{ secrets.REACT_APP_SMTP_SECURE_TOKEN }}
