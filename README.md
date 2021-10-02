@@ -129,5 +129,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Javascript Kampala - [@JsKampala](https://twitter.com/JsKampala) - Javascript Kampala
 
 Project Link: [https://github.com/javaScriptKampala/kampala](https://github.com/javaScriptKampala/kampala)
-
-
