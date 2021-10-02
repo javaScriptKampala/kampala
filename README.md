@@ -86,9 +86,6 @@ This is an example of how to list things you need to use the software and how to
 
 1.Fork this repo
 2.clone your repo
-   ```sh
-   git clone https://github.com/baliksjosay/javascript-kampala-site.git
-   ```
 3 Install NPM packages
    ```sh
    npm install
