@@ -44,6 +44,7 @@ jobs:
           REACT_APP_FIREBASE_MESSAGING_SENDER_ID: ${{ env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID }}
           REACT_APP_FIREBASE_APP_ID: ${{ env.REACT_APP_FIREBASE_APP_ID }}
           REACT_APP_FIREBASE_MEASUREMENT_ID: ${{ env.REACT_APP_FIREBASE_MEASUREMENT_ID }}
+          AFASHA: ${{ secrets.AFASHA }}
           EOF
       - name: "Hello world when it's Monday"
         run: echo "Hello today is Monday!"
