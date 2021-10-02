@@ -45,6 +45,12 @@ jobs:
           REACT_APP_FIREBASE_APP_ID: ${{ env.REACT_APP_FIREBASE_APP_ID }}
           REACT_APP_FIREBASE_MEASUREMENT_ID: ${{ env.REACT_APP_FIREBASE_MEASUREMENT_ID }}
           EOF
+      - name: "Hello world when it's Monday"
+        run: echo "Hello today is Monday!"
+        env:
+          FIRST_NAME: Mona
+          middle_name: The
+          Last_Name: Octocat
           
       - name: Building App
         run: yarn build && echo ${{ env.REACT_APP_FIREBASE_AUTH_DOMAIN }}
