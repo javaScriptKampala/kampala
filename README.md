@@ -84,32 +84,28 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Clone the repo
+1.Fork this repo
+2.clone your repo
    ```sh
    git clone https://github.com/baliksjosay/javascript-kampala-site.git
    ```
-2. Install NPM packages
+3 Install NPM packages
    ```sh
    npm install
    ```
-3. Start Project 
+5.Copy env.example and set variables 
+4 Start Project 
    ```sh
    npm start
    ```
-4. Buld Project
+5 Buld Project
    ```sh
    npm build
    ```
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Javascript kampala community site
-_ refer to the [Documentation](https://javascriptkampala.web.app)_
-
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/baliksjosay/javascript-kampala-site/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/javaScriptKampala/kampala/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -130,8 +126,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Joseph Balikuddembe - [@baliksjoseph](https://twitter.com/baliksjoseph) - baliksjosay@gmail.com
+Javascript Kampala - [@JsKampala](https://twitter.com/JsKampala) - Javascript Kampala
 
-Project Link: [https://github.com/baliksjosay/javascript-kampala-site](https://github.com/baliksjosay/javascript-kampala-site)
+Project Link: [https://github.com/javaScriptKampala/kampala](https://github.com/javaScriptKampala/kampala)
 
 
