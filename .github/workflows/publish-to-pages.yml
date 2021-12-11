@@ -34,7 +34,7 @@ jobs:
         run: yarn install
 
       - name: Building App
-        run: cat .env && yarn build && echo ${{ env.REACT_APP_FIREBASE_AUTH_DOMAIN }}
+        run: yarn build
         env:
           REACT_APP_FIREBASE_API_KEY: ${{ secrets.REACT_APP_FIREBASE_API_KEY }}
           REACT_APP_FIREBASE_AUTH_DOMAIN: ${{ secrets.REACT_APP_FIREBASE_AUTH_DOMAIN }}
