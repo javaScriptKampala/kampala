@@ -6,6 +6,7 @@ import FeaturesTiles from '../components/sections/FeaturesTiles';
 import Testimonial from '../components/sections/Testimonial';
 // import Cta from '../components/sections/Cta';
 
+function Home() {
   return (
     <>
       <Hero className="illustration-section-01" />
