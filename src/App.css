@@ -1,0 +1,23 @@
+
+.join-platforms-slider .swiper-wrapper{
+	display: table;
+    box-sizing: border-box;
+}
+
+.join-platforms-slider .swiper-wrapper .swiper-slide{
+    display: table-cell;
+}
+
+.js-social-card{
+    padding: 3px 5px;
+}
+
+.js-social-card, .js-social-card .card-wrapper{
+    height: 100%;
+}
+
+.card-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

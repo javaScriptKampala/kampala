@@ -45,7 +45,7 @@ const Footer = ({
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <FooterNav />
-            <div className="footer-copyright">Made by <a href="https://baliksjosay.web.app">Baliksjosay</a>. All right reserved</div>
+            <div className="footer-copyright">@{new Date().getFullYear()} <a href={window.location.origin} >Javascript Kampala Community</a>. All right reserved</div>
           </div>
         </div>
       </div>

@@ -12,7 +12,8 @@
     "react-dom": "^16.13.1",
     "react-ga": "^2.7.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^4.0.3",
+    "swiper": "6.8.4"
   },
   "repository": {
     "type": "git",
