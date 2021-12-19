@@ -10,6 +10,7 @@ import LayoutDefault from './layouts/LayoutDefault';
 // Views 
 import Home from './views/Home';
 import Projects from './views/Projects';
+import JoinPlatforms from './views/JoinPlatforms';
 import NotFound from './views/NotFound';
 
 // Initialize Google Analytics
@@ -40,6 +41,7 @@ const App = () => {
         <Switch>
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
           <AppRoute exact path="/projects" component={Projects} layout={LayoutDefault} />
+          <AppRoute exact path="/join-us" component={JoinPlatforms} layout={LayoutDefault} />
           <AppRoute exact path="*" component={NotFound} layout={LayoutDefault} />
         </Switch>
       )} />
