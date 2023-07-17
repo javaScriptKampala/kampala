@@ -1,23 +1,61 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import HomeTopHero from "@/components/heros/HomeTopHero";
+import Head from "next/head";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { analytics, whyUsData } from "@/lib/data";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.tsx</code>
-        </p>
+    <>
+      <Head>
+        <title>JavaScript Kampala | Home</title>
+      </Head>
+      <HomeTopHero />
+      <div className="container">
+        <blockquote className=" border-l-2 pl-6 italic w-full md:w-2/5">
+          A community of javascript developers - learn, motivate, build skills
+          and explore the world of software development with JavaScript.
+        </blockquote>
+        <div className="py-8 lg:py-10 mx-auto max-w-screen-xl ">
+          <h2 className="mb-8 lg:mb-16 text-xl font-extrabold tracking-tight leading-tight md:text-2xl">
+            Analytics
+          </h2>
+          <div className="grid grid-cols-2 gap-8  sm:gap-12 md:grid-cols-3 lg:grid-cols-6 ">
+            {analytics.map((c, k) => (
+              <div
+                key={k}
+                className="flex flex-col justify-center space-y-3 items-center"
+              >
+                <h2 className="scroll-m-20  pb-2 text-6xl font-semibold tracking-tight transition-colors first:mt-0">
+                  {c.title}
+                </h2>
+                <p>{c.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="py-8">
+          <h2 className="mb-6 text-xl font-extrabold tracking-tight leading-tight  md:text-2xl">
+            Why Us?
+          </h2>
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 ">
+            {whyUsData.map((w_, k) => (
+              <Card key={k}>
+                <CardContent className="p-4">
+                  <h1 className="scroll-m-20 text-xl font-semibold tracking-tight">
+                    {w_.title}
+                  </h1>
+                  <p>{w_.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <p>JavaScript Kampala</p>
-      </div>
-    </main>
+    </>
   );
 }
