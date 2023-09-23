@@ -1,128 +1,38 @@
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-
-
-
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/baliksjosay/javascript-kampala-site">
-    <img src="./src/assets/images/jslogo.jpeg" alt="Logo" width="70" height="70">
-  </a>
-
-  <h3 align="center">Javascript Kampala Website</h3>
-
-  <p align="center">
-    Learning platform
-    <br />
-    <a href="#"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://gdexpertsuganda.web.app/">View Demo</a>
-    ·
-    <a href="https://github.com/baliksjosay/javascript-kampala-site/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/baliksjosay/javascript-kampala-site/issues">Request Feature</a>
-  </p>
-</p>
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-The best modern website for GDEXperts
-
-Here's why its good:
-* build with graphQL and gatsby
-* Manageable site content
-* Very fast and efficient :smile:
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
-
-### Built With
-
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [React](https://reactjs.org/tutorial/tutorial.html)
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
-This is how you can set up your project locally.
-To get a local copy up and running follow these simple example steps.
+First, run the development server:
 
-### Prerequisites
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Installation
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-1.Fork this repo
-2.clone your repo
-3 Install NPM packages
-   ```sh
-   npm install
-   ```
-5.Copy env.example and set variables 
-4 Start Project 
-   ```sh
-   npm start
-   ```
-5 Buld Project
-   ```sh
-   npm build
-   ```
-<!-- ROADMAP -->
-## Roadmap
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-See the [open issues](https://github.com/javaScriptKampala/kampala/issues) for a list of proposed features (and known issues).
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-<!-- CONTRIBUTING -->
-## Contributing
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+## Learn More
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+To learn more about Next.js, take a look at the following resources:
 
-<!-- LICENSE -->
-## License
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Distributed under the MIT License. See `LICENSE` for more information.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-<!-- CONTACT -->
-## Contact
+## Deploy on Vercel
 
-Javascript Kampala - [@JsKampala](https://twitter.com/JsKampala) - Javascript Kampala
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Project Link: [https://github.com/javaScriptKampala/kampala](https://github.com/javaScriptKampala/kampala)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
