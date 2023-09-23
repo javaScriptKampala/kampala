@@ -1,19 +1,10 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import HomeTopHero from "@/components/heros/HomeTopHero";
-import Head from "next/head";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { analytics, whyUsData } from "@/lib/data";
-import Link from "next/link";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>JavaScript Kampala | Home</title>
-      </Head>
       <HomeTopHero />
       <div className="container">
         <blockquote className=" border-l-2 pl-6 italic w-full md:w-2/5">
