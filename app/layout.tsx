@@ -1,55 +1,45 @@
-import TopNavigationBar from '@/components/navigation/TopNavigationBar';
-import { ThemeProvider } from '@/components/ui/theme-provider';
-import '@/styles/globals.css';
-import { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import Footer from "@/components/footer"
+import TopNavigationBar from "@/components/navigation/TopNavigationBar"
+import { Button } from "@/components/ui/button"
+import { ThemeProvider } from "@/components/ui/theme-provider"
+import "@/styles/globals.css"
+import { Metadata } from "next"
+import { Ubuntu } from "next/font/google"
+import Link from "next/link"
 
-const inter = Inter({ subsets: ['latin'] });
-
+const inter = Ubuntu({ weight: ["400", "700"], subsets: ["cyrillic"] })
 
 export const metadata: Metadata = {
-    title: 'JavaScript Kampala | Home',
-  }
+	title: "JavaScript Kampala | Home",
+}
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode
 }) {
-  return (
-    <>
-      <html
-        lang="en"
-        suppressHydrationWarning
-      >
-        <body className={inter.className}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <TopNavigationBar />
-            {children}
-            <div className="container space-0">
-              <p className="text-white text-xs"> © 2023 JavaScript Kampala</p>
-              {/* <div className=" space-x-5 py-4 text-xs">
-            {[
-              "Privacy statement",
-              "Terms of use",
-              "All policies and guidelines",
-              "Digital accessibility",
-              "Cookie Preferences",
-            ].map((t, k) => (
-              <Link className="hover:underline text-white" key={k} href={"/"}>
-                {t}
-              </Link>
-            ))}
-          </div> */}
-            </div>
-          </ThemeProvider>
-        </body>
-      </html>
-    </>
-  );
+	return (
+		<>
+			<html lang="en" suppressHydrationWarning>
+				<body
+					className={`${inter.className} w-screen min-h-screen overflow-x-hidden`}
+				>
+					<ThemeProvider
+						attribute="class"
+						defaultTheme="system"
+						enableSystem
+						disableTransitionOnChange
+					>
+						<TopNavigationBar />
+
+						<main className="container max-w-5xl mx-auto py-20">
+							{children}
+						</main>
+
+						<Footer />
+					</ThemeProvider>
+				</body>
+			</html>
+		</>
+	)
 }
