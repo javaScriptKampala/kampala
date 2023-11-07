@@ -102,10 +102,6 @@ export default function TopNavigationBar() {
 							</Link>
 						</NavigationMenuItem>
 					</NavigationMenuList>
-
-					<div className="fixed bottom-0 right-6 mb-4">
-						<ModeToggle />
-					</div>
 				</NavigationMenu>
 			</div>
 		</div>

@@ -1,9 +1,8 @@
-import Image from "next/image"
-import { Button } from "../ui/button"
+import { Button } from "@/components/ui/button"
 
-export default function Header() {
+export default function Hero() {
 	return (
-		<div className="min-w-full flex my-8 gap-20">
+		<div className="min-w-full flex my-20 gap-20">
 			<div className="flex-1">
 				<h1 className="text-8xl font-bold mb-6 text-primary">
 					JavaScript @Kampala

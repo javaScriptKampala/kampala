@@ -32,7 +32,7 @@ export default function RootLayout({
 					>
 						<TopNavigationBar />
 
-						<main className="container max-w-5xl mx-auto py-20">
+						<main className="container max-w-5xl mx-auto py-20 flex flex-col">
 							{children}
 						</main>
 

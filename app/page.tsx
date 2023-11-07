@@ -1,15 +1,17 @@
-import HomeTopHero from "@/components/heros/HomeTopHero"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { analytics, whyUsData } from "@/lib/data"
+import Link from "next/link"
+
+import HeroSection from "@/components/home/Hero"
+import MeetupsSection from "@/components/home/Meetups"
+import BlogSection from "@/components/home/Blog"
+import SupportSection from "@/components/home/Support"
 
 export default function Home() {
 	return (
 		<>
-			<HomeTopHero />
-
-			<section>Meetups</section>
-			<section>Blog</section>
-			<section>Support Us.</section>
+			<HeroSection />
+			<MeetupsSection />
+			<BlogSection />
+			<SupportSection />
 		</>
 	)
 }
