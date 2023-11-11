@@ -3,12 +3,14 @@ import { Button } from "@/components/ui/button"
 
 export default function Footer() {
 	return (
-		<div className="container max-w-5xl mx-auto flex flex-col">
+		<div className="container max-w-5xl mx-auto flex flex-col gap-2">
 			<div className="flex gap-8">
 				<div className="flex-1 bg-primary text-black px-6 py-10">
-					<h1 className="text-5xl font-bold">JavaScript @Kampala</h1>
+					<h1 className="text-5xl font-bold text-center md:text-left">
+						JavaScript @Kampala
+					</h1>
 				</div>
-				<div className="flex-1 flex flex-col items-end text-right">
+				<div className="flex-1 hidden md:flex flex-col items-end text-right">
 					<ul className="space-y-2">
 						{["About", "Meetups", "Blog", "Gallery", "Sponsors"].map(
 							(link: string) => (
@@ -27,10 +29,14 @@ export default function Footer() {
 						)}
 					</ul>
 				</div>
-				<div className="flex-1 text-sm flex leading-6">
+				<div className="flex-1 text-sm leading-6 hidden md:flex">
 					Made with ❤️ in <br /> Kampala, Uganda.
 					<br />© 2023 JavaScript Kampala
 				</div>
+			</div>
+			<div className="w-full flex-1 text-sm flex justify-center items-center leading-6 text-center md:hidden my-6">
+				Made with ❤️ in <br /> Kampala, Uganda.
+				<br />© 2023 JavaScript Kampala
 			</div>
 		</div>
 	)

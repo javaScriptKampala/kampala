@@ -42,11 +42,11 @@ const navItems = [
 		path: "/gallery",
 		newPage: false,
 	},
-	{
-		title: "Sponsors",
-		path: "/sponsors",
-		newPage: false,
-	},
+	// {
+	// 	title: "Sponsors",
+	// 	path: "/sponsors",
+	// 	newPage: false,
+	// },
 	// {
 	// 	title: "Twitter",
 	// 	path: "https://twitter.com/JsKampala",
@@ -63,7 +63,7 @@ export default function TopNavigationBar() {
 	return (
 		<div className="w-screen flex py-4 absolute top-0 left-0 right-0 backdrop-blur-sm border-b">
 			<div className="container flex justify-between max-w-5xl mx-auto">
-				<Link href={"/"}>
+				<Link href={"/"} className="block min-w-[40px]">
 					<Image
 						src={"/icons/icon-512.png"}
 						width={40}
@@ -76,11 +76,7 @@ export default function TopNavigationBar() {
 					<NavigationMenuList className="space-x-4 justify-end">
 						{navItems.map((_l, k) => (
 							<NavigationMenuItem>
-								<Link
-									target={_l.newPage ? "_blank" : "_parent"}
-									key={k}
-									href={_l.path}
-								>
+								<Link key={k} href={_l.path}>
 									<Button
 										size={"lg"}
 										variant="link"
@@ -91,7 +87,7 @@ export default function TopNavigationBar() {
 								</Link>
 							</NavigationMenuItem>
 						))}
-						<NavigationMenuItem>
+						<NavigationMenuItem className="hidden sm:block">
 							<Link
 								href={"https://chat.whatsapp.com/KI0X9ww3DEL8cfV07tvJtQ"}
 								target="_blank"
