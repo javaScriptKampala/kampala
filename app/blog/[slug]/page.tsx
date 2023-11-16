@@ -1,3 +1,4 @@
+
 import { notFound } from "next/navigation"
 
 import { getAllPostIds, getPostData } from "@/lib/posts"
@@ -8,11 +9,14 @@ interface IProps {
 	}
 }
 
+
+
 interface PostData {
 	title: string
 	date: string
 	contentHTML: string
 }
+
 
 export default async function BlogPost({ params }: IProps) {
 	const postData: PostData = await getPostData("blog", params.slug)
