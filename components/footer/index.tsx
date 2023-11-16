@@ -12,7 +12,11 @@ export default function Footer() {
 				</div>
 				<div className="flex-1 hidden md:flex flex-col items-end text-right">
 					<ul className="space-y-2">
+<<<<<<< HEAD
 						{["About", "Meetups", "Blog", "Gallery", "Sponsors"].map(
+=======
+						{["About", "Events", "Blog", "Gallery", "Sponsors"].map(
+>>>>>>> 46d9fd6 (Meetups changed events in the footer)
 							(link: string) => (
 								<li>
 									<Link href={"/" + link.toLowerCase()}>
