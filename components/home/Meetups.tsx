@@ -1,12 +1,11 @@
 import Link from "next/link"
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { getSortedPostsData } from "@/lib/posts"
 import { Post } from "@/lib/types"
+import { Card, CardContent, CardFooter } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 
-export default function Meetups() {
-	const eventsList: Post[] = getSortedPostsData("events", 3)
+export default function Meetups({ eventsList = [] }: { eventsList: Post[] }) {
+	console.log("eventsList", eventsList)
 
 	return (
 		<section className="w-full my-12">

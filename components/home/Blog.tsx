@@ -1,15 +1,12 @@
 import Link from "next/link"
+import Image from "next/image"
 
+import { Post } from "@/lib/types"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import Image from "next/image"
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
-import { getSortedPostsData } from "@/lib/posts"
-import { Post } from "@/lib/types"
 
-export default function Blog() {
-	let blogPosts: Post[] = getSortedPostsData("blog", 3)
-
+export default function Blog({ blogPosts = [] }: { blogPosts?: Post[] }) {
 	return (
 		<section className="w-full my-12">
 			<h1 className="w-full text-center font-bold text-5xl mb-10">Blog</h1>

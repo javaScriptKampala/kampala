@@ -1,6 +1,8 @@
+import RootLayout from "@/components/layout"
+
 export default function GalleryPage() {
 	return (
-		<>
+		<RootLayout title="Gallery">
 			<h1 className="w-full text-left font-bold text-5xl my-10">Gallery</h1>
 			<div className="w-full flex flex-col">
 				<div className="columns-3 gap-4 space-y-4">
@@ -15,6 +17,6 @@ export default function GalleryPage() {
 					))}
 				</div>
 			</div>
-		</>
+		</RootLayout>
 	)
 }

@@ -1,16 +1,16 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { getSortedPostsData } from "@/lib/posts"
-import { Post } from "@/lib/types"
 import Image from "next/image"
 import Link from "next/link"
 
-export default function EventsPage() {
-	const blogPosts: Post[] = getSortedPostsData("blog")
+import RootLayout from "@/components/layout"
+import { Post } from "@/lib/types"
+import { getSortedPostsData } from "@/lib/posts"
+import { Button } from "@/components/ui/button"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Card, CardContent, CardFooter } from "@/components/ui/card"
 
+export default function EventsPage({ blogPosts }: { blogPosts: Post[] }) {
 	return (
-		<div>
+		<RootLayout title="Blog">
 			<h1 className="w-full font-bold text-5xl my-10">Blog</h1>
 			<ul className="gap-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
 				{blogPosts.map((post) => (
@@ -65,6 +65,16 @@ export default function EventsPage() {
 				<li className="flex-1"></li>
 				<li className="flex-1"></li>
 			</ul>
-		</div>
+		</RootLayout>
 	)
+}
+
+export async function getStaticProps() {
+	const blogPosts: Post[] = getSortedPostsData("blog")
+
+	return {
+		props: {
+			blogPosts: JSON.parse(JSON.stringify(blogPosts)),
+		},
+	}
 }
